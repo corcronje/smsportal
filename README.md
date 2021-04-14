@@ -22,7 +22,9 @@ $client = new Client('your-api-id', 'your-api-secret');
 
 $client->getBalance(); // return the remaining credits
 
-$client->send('0812345678', 'Your message'); // send a SMS message
+$message = new Message('0812345678', 'Your message'); // create a new message
+
+$client->send($message); // send the message
 ```
 
 ## Contributors
