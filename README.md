@@ -1,4 +1,4 @@
-# SMSPortal CLient
+# SMSPortal Client
 A PHP client for sending SMS messages via SMSPortal
 
 ## About
