@@ -11,7 +11,7 @@ class SendMessageTest extends TestCase
     /** @test */
     public function it_sends_a_message()
     {
-        $client = new Client();
+        $client = new Client('your-username', 'your-password');
         $message = new Message('0812345678', 'Test', ['testMode' => true]);
         $respone = $client->send($message);
         $this->assertTrue($respone->getStatusCode() === 200);

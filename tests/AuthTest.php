@@ -10,7 +10,7 @@ class AuthTest extends TestCase
     /** @test */
     public function it_has_a_token()
     {
-        $client = new Client();
+        $client = new Client('your-username', 'your-password');
         $this->assertIsString($client->token);
     }
 }

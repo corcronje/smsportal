@@ -13,11 +13,11 @@ class Client
     public $base_uri;
     public $token;
 
-    public function __construct()
+    public function __construct($username, $password, $base_uri = 'https://rest.smsportal.com/')
     {
-        $this->base_uri = 'https://rest.smsportal.com/';
-        $this->username = 'your-username';
-        $this->password = 'your-password';
+        $this->base_uri = $base_uri;
+        $this->username = $username;
+        $this->password = $password;
         $this->token = $this->auth();
     }
 

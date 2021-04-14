@@ -1,5 +1,5 @@
 {
-    "name": "corcronje/laravel-smsportal",
+    "name": "corcronje/smsportal",
     "description": "Send text messages via SmsPortal",
     "type": "library",
     "license": "MIT",
