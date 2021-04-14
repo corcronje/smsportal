@@ -1,0 +1,23 @@
+{
+    "name": "corcronje/laravel-smsportal",
+    "description": "Send text messages via SmsPortal",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cor Cronje",
+            "email": "cronje.cor@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CorCronje\\SmsPortal\\": "src/"
+        }
+    }
+}
