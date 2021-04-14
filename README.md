@@ -18,9 +18,13 @@ composer require corcronje/smsportal
 ```
 2.	Basic usage:
 ``` php
-$client = new Client('your-api-id', 'your-api-secret');
+require_once 'vendor/autoload.php';
 
-$client->getBalance(); // return the remaining credits
+use CorCronje\SmsPortal;
+
+$client = new Client('your-api-id', 'your-api-secret'); // init the client
+
+$client->getBalance(); // return the remaining credit balance
 
 $message = new Message('0812345678', 'Your message'); // create a new message
 
